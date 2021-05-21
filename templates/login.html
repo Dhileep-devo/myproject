@@ -1,0 +1,8 @@
+<form method='POST' enctype="multipart/form-data">
+<h1>Uploader</h1>
+{% csrf_token %}
+{{form.as_p}}
+{{file_form.as_p}}
+<button type='submit'>Upload</button>
+</form>
+<p>To see the list of files <a href='http://localhost:8000/api'>click here </a></p>
